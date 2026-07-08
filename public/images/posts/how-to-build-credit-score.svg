@@ -1,0 +1,54 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>How to Build Your Credit Score From Scratch: A Beginner's Guide</title>
+<desc>An ascending staircase chart illustrating a credit score climbing from 300 to 850, representing building credit from scratch.</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#0C2233"/>
+    <stop offset="100%" stop-color="#0A1B29"/>
+  </linearGradient>
+  <linearGradient id="stepFade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E7B24C"/>
+    <stop offset="100%" stop-color="#C98A2C"/>
+  </linearGradient>
+</defs>
+
+<rect width="1200" height="630" fill="url(#bg)"/>
+
+<circle cx="1120" cy="70" r="150" fill="#12354C" opacity="0.5"/>
+<circle cx="60" cy="600" r="120" fill="#12354C" opacity="0.4"/>
+
+<text x="70" y="95" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#8FA9BB" letter-spacing="3">WEALTH WITHIN REACH</text>
+<line x1="70" y1="112" x2="330" y2="112" stroke="#2C5470" stroke-width="2"/>
+
+<text x="70" y="185" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#F5F1E7">
+  <tspan x="70" dy="0">How to Build Your</tspan>
+  <tspan x="70" dy="62">Credit Score From Scratch</tspan>
+</text>
+
+<text x="70" y="290" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#C7D6DF">A beginner's guide to starting from zero</text>
+
+<g transform="translate(70,330)">
+  <rect x="0"   y="140" width="90" height="60"  rx="6" fill="#2C5470"/>
+  <rect x="110" y="105" width="90" height="95"  rx="6" fill="#3C6E88"/>
+  <rect x="220" y="70"  width="90" height="130" rx="6" fill="#4F8B9C"/>
+  <rect x="330" y="35"  width="90" height="165" rx="6" fill="#6FA98E"/>
+  <rect x="440" y="0"   width="90" height="200" rx="6" fill="url(#stepFade)"/>
+
+  <text x="45"  y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9FB4C2">No credit</text>
+  <text x="155" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9FB4C2">580</text>
+  <text x="265" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9FB4C2">670</text>
+  <text x="375" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9FB4C2">740</text>
+  <text x="485" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#F0DDB0">800+</text>
+
+  <circle cx="45" cy="140" r="9" fill="#F5F1E7"/>
+  <path d="M45 140 Q80 100 155 105 Q210 90 265 70 Q300 55 375 35 Q410 20 485 0"
+        fill="none" stroke="#F5F1E7" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="485" cy="0" r="9" fill="#F5F1E7"/>
+</g>
+
+<text x="70" y="600" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#7C93A2">wealthwithinreach.com</text>
+
+<text x="1130" y="600" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#7C93A2">Credit &amp; Debt Series</text>
+
+</svg>
