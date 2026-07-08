@@ -1,0 +1,14 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#557399"/>
+      <stop offset="100%" stop-color="#1c2635"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <circle cx="1000" cy="120" r="180" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="120" cy="650" r="240" fill="rgba(255,255,255,0.06)"/>
+  <text x="80" y="600" font-family="Georgia, serif" font-size="42" font-weight="700" fill="white">Pay Off Debt</text>
+  <text x="80" y="655" font-family="Georgia, serif" font-size="42" font-weight="700" fill="white">Fast</text>
+  <text x="80" y="700" font-family="Arial, sans-serif" font-size="24" fill="rgba(255,255,255,0.85)">Wealth Within Reach</text>
+</svg>
