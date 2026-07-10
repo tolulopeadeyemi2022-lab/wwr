@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  
+  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" />
+    <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" />
+  </g>
+
+  <rect x="240" y="60" width="320" height="330" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  
+  <rect x="270" y="90" width="260" height="24" rx="2" fill="#38bdf8" opacity="0.15" />
+  <rect x="285" y="98" width="100" height="8" rx="1" fill="#0ea5e9" />
+  
+  <rect x="270" y="140" width="80" height="10" rx="1" fill="#94a3b8" />
+  <line x1="270" y1="165" x2="530" y2="165" stroke="#cbd5e1" stroke-width="1.5" />
+  <line x1="270" y1="185" x2="530" y2="185" stroke="#cbd5e1" stroke-width="1.5" />
+  <line x1="270" y1="205" x2="530" y2="205" stroke="#cbd5e1" stroke-width="1.5" />
+  
+  <rect x="270" y="240" width="80" height="10" rx="1" fill="#94a3b8" />
+  <line x1="270" y1="265" x2="530" y2="265" stroke="#cbd5e1" stroke-width="1.5" />
+  <line x1="270" y1="285" x2="530" y2="285" stroke="#cbd5e1" stroke-width="1.5" />
+  <line x1="270" y1="305" x2="530" y2="305" stroke="#cbd5e1" stroke-width="1.5" />
+
+  <g transform="translate(510, 310) rotate(45)">
+    <rect x="0" y="0" width="8" height="40" rx="1" fill="#10b981" />
+    <path d="M 0,0 L 4,-8 L 8,0 Z" fill="#f59e0b" />
+  </g>
+</svg>
