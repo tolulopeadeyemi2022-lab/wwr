@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  
+  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" />
+    <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" />
+  </g>
+
+  <rect x="120" y="80" width="560" height="290" rx="12" fill="url(#cardGrad)" stroke="#475569" stroke-width="2" />
+  
+  <circle cx="145" cy="105" r="5" fill="#ef4444" />
+  <circle cx="160" cy="105" r="5" fill="#f59e0b" />
+  <circle cx="175" cy="105" r="5" fill="#10b981" />
+  <rect x="200" y="97" width="120" height="16" rx="4" fill="#334155" opacity="0.5" />
+
+  <text x="400" y="155" font-family="system-ui, sans-serif" font-weight="800" font-size="24" fill="#ffffff" text-anchor="middle">DEBT CONSOLIDATION STRATEGY</text>
+  <text x="400" y="185" font-family="system-ui, sans-serif" font-weight="600" font-size="15" fill="#38bdf8" text-anchor="middle">Reorganizing Multiple Liabilities Into One Single Stream</text>
+
+  <g transform="translate(150, 215)">
+    <rect x="0" y="0" width="90" height="30" rx="4" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" />
+    <text x="45" y="18" font-family="system-ui, sans-serif" font-size="11" fill="#ef4444" text-anchor="middle">Card A</text>
+    
+    <rect x="0" y="40" width="90" height="30" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="45" y="58" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b" text-anchor="middle">Card B</text>
+    
+    <rect x="0" y="80" width="90" height="30" rx="4" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" />
+    <text x="45" y="98" font-family="system-ui, sans-serif" font-size="11" fill="#6366f1" text-anchor="middle">Loan C</text>
+
+    <path d="M 100,15 L 180,55" stroke="#475569" stroke-width="1.5" fill="none" stroke-dasharray="3,3" />
+    <path d="M 100,55 L 180,55" stroke="#475569" stroke-width="1.5" fill="none" stroke-dasharray="3,3" />
+    <path d="M 100,95 L 180,55" stroke="#475569" stroke-width="1.5" fill="none" stroke-dasharray="3,3" />
+    
+    <rect x="190" y="30" width="160" height="50" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+    <text x="270" y="60" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#10b981" text-anchor="middle">Unified Payment Pool</text>
+    <text x="270" y="73" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Lower Rate • Single Target</text>
+  </g>
+  
+  <text x="400" y="335" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Consolidation optimizes efficiency; it does not eliminate balances automatically.</text>
+</svg>
