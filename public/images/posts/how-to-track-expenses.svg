@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  
+  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" />
+    <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" />
+  </g>
+
+  <rect x="120" y="80" width="560" height="290" rx="12" fill="url(#cardGrad)" stroke="#475569" stroke-width="2" />
+  
+  <circle cx="145" cy="105" r="5" fill="#ef4444" />
+  <circle cx="160" cy="105" r="5" fill="#f59e0b" />
+  <circle cx="175" cy="105" r="5" fill="#10b981" />
+  <rect x="200" y="97" width="120" height="16" rx="4" fill="#334155" opacity="0.5" />
+
+  <text x="400" y="160" font-family="system-ui, sans-serif" font-weight="800" font-size="24" fill="#ffffff" text-anchor="middle">REAL-TIME EXPENSE TRACKER</text>
+  <text x="400" y="190" font-family="system-ui, sans-serif" font-weight="600" font-size="16" fill="#10b981" text-anchor="middle">Visibility &amp; Cash Flow Optimization</text>
+
+  <g transform="translate(200, 225)">
+    <rect x="0" y="0" width="400" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    
+    <text x="30" y="38" font-family="system-ui, sans-serif" font-weight="bold" font-size="14" fill="#94a3b8">Logged:</text>
+    <rect x="100" y="24" width="200" height="18" rx="4" fill="#334155" />
+    <rect x="100" y="24" width="145" height="18" rx="4" fill="#10b981" />
+    <text x="320" y="38" font-family="monospace, monospace" font-weight="bold" font-size="14" fill="#10b981">72%</text>
+  </g>
+  
+  <text x="400" y="325" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Financial Awareness Engine</text>
+</svg>
