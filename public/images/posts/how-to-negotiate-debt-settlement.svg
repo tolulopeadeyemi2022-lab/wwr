@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="accentBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="accentGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+
+  <!-- Layout Blueprint Grid (Subtle geometric background) -->
+  <g opacity="0.02" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,75 L 800,75 M 0,150 L 800,150 M 0,225 L 800,225 M 0,300 L 800,300 M 0,375 L 800,375" />
+    <path d="M 160,0 L 160,450 M 320,0 L 320,450 M 480,0 L 480,450 M 640,0 L 640,450" />
+  </g>
+
+  <!-- Background blur glow behind graphics -->
+  <circle cx="220" cy="200" r="180" fill="#f43f5e" opacity="0.02" filter="blur(40px)" />
+  <circle cx="580" cy="200" r="180" fill="#10b981" opacity="0.03" filter="blur(40px)" />
+
+  <!-- LEFT GRAPHIC: The Original Delinquent Debt ($7,500) -->
+  <g transform="translate(110, 80)" filter="url(#dropShadow)">
+    <rect width="190" height="210" rx="16" fill="#1e293b" stroke="#ef4444" stroke-width="2" />
+    
+    <!-- Red Alert Header Area -->
+    <path d="M 0,16 C 0,7.16 7.16,0 16,0 L 174,0 C 182.84,0 190,7.16 190,16 L 190,44 L 0,44 Z" fill="#ef4444" opacity="0.1" />
+    
+    <!-- Balance Details -->
+    <text x="95" y="30" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#ef4444" text-anchor="middle" letter-spacing="0.8">UNRESOLVED DEBT</text>
+    <text x="95" y="100" font-family="system-ui, sans-serif" font-size="36" font-weight="900" fill="#f1f5f9" text-anchor="middle">$7,500</text>
+    <text x="95" y="122" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">Original Balance Statement</text>
+    
+    <line x1="25" y1="145" x2="165" y2="145" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Delinquency Warning Metrics -->
+    <rect x="25" y="162" width="140" height="26" rx="6" fill="#ef4444" opacity="0.1" />
+    <text x="95" y="179" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#f87171" text-anchor="middle">180+ DAYS DELINQUENT</text>
+  </g>
+
+  <!-- CENTER SPLIT ELEMENT: Direct Consumer Leverage Bridge -->
+  <g transform="translate(325, 160)">
+    <!-- Interactive Connector Line with Breaking Bolt -->
+    <path d="M 10,25 L 140,25" fill="none" stroke="#475569" stroke-width="3" stroke-dasharray="6,6" />
+    
+    <!-- Leverage Indicator Diamond -->
+    <rect x="55" y="5" width="40" height="40" rx="6" transform="rotate(45 75 25)" fill="#0f172a" stroke="#38bdf8" stroke-width="2.5" />
+    <text x="75" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#38bdf8" text-anchor="middle">VS</text>
+  </g>
+
+  <!-- RIGHT GRAPHIC: The Written Settled Agreement ($3,000) -->
+  <g transform="translate(500, 80)" filter="url(#dropShadow)">
+    <rect width="190" height="210" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="2.5" />
+    
+    <!-- Green Validated Header Area -->
+    <path d="M 0,16 C 0,7.16 7.16,0 16,0 L 174,0 C 182.84,0 190,7.16 190,16 L 190,44 L 0,44 Z" fill="#10b981" opacity="0.1" />
+    
+    <!-- Settled Details -->
+    <text x="95" y="30" font-family="system-ui, sans-serif" font-size="11" font-weight="900" fill="#10b981" text-anchor="middle" letter-spacing="0.8">SETTLED IN WRITING</text>
+    <text x="95" y="100" font-family="system-ui, sans-serif" font-size="36" font-weight="900" fill="#34d399" text-anchor="middle">$3,000</text>
+    <text x="95" y="122" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" text-anchor="middle">40% Final Lump Sum Paid</text>
+    
+    <line x1="25" y1="145" x2="165" y2="145" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Agreement Checkbox Node -->
+    <g transform="translate(35, 162)">
+      <rect width="120" height="26" rx="6" fill="#10b981" opacity="0.15" />
+      <!-- Validation Checkmark -->
+      <path d="M 20,13 L 26,19 L 36,9" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="74" y="17" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#34d399" text-anchor="middle">OFFICIAL letter</text>
+    </g>
+  </g>
+
+  <!-- Structural Core Labeling Footer -->
+  <text x="400" y="340" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">DIY Debt Settlement Strategy</text>
+  <text x="400" y="366" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Bypass expensive agencies. Secure direct agreements and get absolute verification in writing.</text>
+</svg>
