@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+
+  <!-- Layout Grid Lines (Subtle decorative accents) -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,90 L 800,90 M 0,225 L 800,225 M 0,360 L 800,360" />
+    <path d="M 150,0 L 150,450 M 400,0 L 400,450 M 650,0 L 650,450" />
+  </g>
+
+  <!-- Left Graph Area: Volatile Income Swings -->
+  <g transform="translate(60, 60)" filter="url(#shadow)">
+    <text x="10" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#f1f5f9" letter-spacing="1">UNPREDICTABLE INFLOWS</text>
+    
+    <!-- Irregular Wave Vector Line representing income highs and lows -->
+    <path d="M 20,180 Q 60,40 100,160 T 180,80 T 260,200" fill="none" stroke="#f43f5e" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Chart Background Guides -->
+    <line x1="20" y1="200" x2="260" y2="200" stroke="#475569" stroke-width="2" />
+    <line x1="20" y1="110" x2="260" y2="110" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.3" />
+    
+    <!-- Baseline Indicator Badge -->
+    <rect x="20" y="190" width="85" height="18" rx="4" fill="#f43f5e" opacity="0.15" />
+    <text x="25" y="203" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#f43f5e">WORST MONTH FLOOR</text>
+  </g>
+
+  <!-- Central Interface Component: The Smoothing Buffer Valve -->
+  <g transform="translate(350, 110)" filter="url(#shadow)">
+    <!-- Central Cylinder Vessel holding funds -->
+    <rect x="10" y="20" width="80" height="140" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    
+    <!-- Filled Liquid Area showing stored resource -->
+    <path d="M 11,90 Q 30,85 50,90 T 89,90 L 89,144 C 89,152 81,159 73,159 L 27,159 C 19,159 11,152 11,144 Z" fill="url(#blueGrad)" opacity="0.8" />
+    
+    <!-- Directional Arrow Nodes -->
+    <path d="M -20,40 L 0,40" fill="none" stroke="#f43f5e" stroke-width="3" stroke-linecap="round" />
+    <path d="M -5,35 L 5,40 L -5,45" fill="none" stroke="#f43f5e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <path d="M 90,110 L 110,110" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" />
+    <path d="M 105,105 L 115,110 L 105,115" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+    <text x="50" y="10" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#38bdf8" text-anchor="middle" letter-spacing="0.5">THE BUFFER</text>
+  </g>
+
+  <!-- Right Graph Area: Stabilized Steady Outflow Base -->
+  <g transform="translate(500, 60)" filter="url(#shadow)">
+    <text x="20" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#f1f5f9" letter-spacing="1">PREDICTABLE PAYCHECK</text>
+    
+    <!-- Balanced Linear Solid Stream Vector Line -->
+    <line x1="20" y1="120" x2="240" y2="120" stroke="#10b981" stroke-width="5" stroke-linecap="round" />
+    <line x1="20" y1="200" x2="240" y2="200" stroke="#475569" stroke-width="2" />
+    
+    <!-- Shaded Under Area showing safety baseline clarity -->
+    <rect x="20" y="120" width="220" height="80" fill="url(#greenGrad)" opacity="0.08" />
+
+    <!-- Controlled Spending Indicator Badge -->
+    <rect x="20" y="85" width="95" height="22" rx="6" fill="#10b981" opacity="0.15" />
+    <text x="28" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#10b981">SMOOTHED SALARY</text>
+  </g>
+
+  <!-- Primary Subtitle and Framing Copy -->
+  <text x="400" y="365" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">Smoothing Out Irregular Cash Flow</text>
+  <text x="400" y="392" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Route volatile revenue peaks through a buffer account to distribute a fixed, secure baseline income.</text>
+</svg>
