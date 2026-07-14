@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+
+  <!-- Layout Containers -->
+  <g transform="translate(60, 80)">
+    <!-- Main Card -->
+    <rect width="680" height="290" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    
+    <!-- Header -->
+    <text x="30" y="50" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#f8fafc">DEBT PAYOFF PLAN</text>
+    <text x="30" y="75" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Visualizing your path to zero balance[cite: 6]</text>
+
+    <!-- Bar Chart Simulation -->
+    <g transform="translate(30, 120)">
+      <!-- Bars -->
+      <rect x="0" y="100" width="80" height="40" rx="4" fill="#334155" />
+      <rect x="100" y="70" width="80" height="70" rx="4" fill="#334155" />
+      <rect x="200" y="30" width="80" height="110" rx="4" fill="#334155" />
+      <rect x="300" y="0" width="80" height="140" rx="4" fill="url(#primaryGradient)" filter="url(#shadow)" />
+      
+      <!-- Axis -->
+      <line x1="0" y1="145" x2="400" y2="145" stroke="#475569" stroke-width="2" />
+      
+      <!-- Label -->
+      <text x="340" y="-15" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#c084fc" text-anchor="middle">CURRENT MOMENTUM</text>
+    </g>
+
+    <!-- Metrics Sidebar -->
+    <g transform="translate(480, 120)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#94a3b8">TOTAL DEBT</text>
+      <text x="0" y="30" font-family="system-ui, sans-serif" font-size="32" font-weight="900" fill="#f8fafc">$5,950</text>
+      
+      <text x="0" y="80" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#94a3b8">MONTHLY BUDGET</text>
+      <text x="0" y="110" font-family="system-ui, sans-serif" font-size="32" font-weight="900" fill="#38bdf8">$250</text>
+      
+      <text x="0" y="145" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">Consistency over intensity[cite: 6].</text>
+    </g>
+  </g>
+</svg>
