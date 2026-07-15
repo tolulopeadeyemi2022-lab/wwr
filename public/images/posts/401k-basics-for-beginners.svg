@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+
+  <!-- Shield/Growth Visual for 401k -->
+  <path d="M 400 100 L 550 150 L 550 250 C 550 350, 400 400, 400 400 C 400 400, 250 350, 250 250 L 250 150 Z" fill="#3b82f6" />
+  <text x="400" y="250" font-family="system-ui, sans-serif" font-size="60" font-weight="900" fill="#ffffff" text-anchor="middle">401k</text>
+  
+  <text x="400" y="400" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">RETIREMENT SECURITY</text>
+</svg>
