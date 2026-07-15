@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+
+  <!-- Simplified Stock Graph -->
+  <path d="M 100 300 L 250 250 L 400 350 L 550 200 L 700 150" stroke="#10b981" stroke-width="6" fill="none" stroke-linecap="round" />
+  <circle cx="700" cy="150" r="10" fill="#10b981" />
+  
+  <text x="400" y="400" font-family="system-ui, sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle">INVESTING MADE SIMPLE</text>
+</svg>
