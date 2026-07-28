@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Decorative background grid circles -->
+  <circle cx="1050" cy="100" r="250" fill="#3b82f6" opacity="0.05" />
+  <circle cx="150" cy="530" r="200" fill="#10b981" opacity="0.05" />
+
+  <!-- Main Dashboard Card Container -->
+  <g transform="translate(150, 95)">
+    <!-- Window Frame -->
+    <rect width="900" height="440" rx="16" fill="url(#card)" stroke="#475569" stroke-width="2" />
+    
+    <!-- Window Header Bar -->
+    <path d="M 0 16 C 0 7.16 7.16 0 16 0 L 884 0 C 928.84 0 900 7.16 900 16 L 900 50 L 0 50 Z" fill="#0f172a" />
+    <circle cx="30" cy="25" r="6" fill="#ef4444" />
+    <circle cx="50" cy="25" r="6" fill="#f59e0b" />
+    <circle cx="70" cy="25" r="6" fill="#10b981" />
+    <text x="450" y="30" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="500">Subscription Audit &amp; Budget Tracker</text>
+
+    <!-- Content Inside Window -->
+    <!-- Left Column: Stats / Visualizer -->
+    <g transform="translate(50, 90)">
+      <!-- Stat Box 1: Before -->
+      <rect width="360" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+      <text x="20" y="35" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Previous Monthly Spend</text>
+      <text x="20" y="75" font-family="system-ui, sans-serif" font-size="32" fill="#ef4444" font-weight="bold">$208.42</text>
+      <text x="310" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#ef4444" text-anchor="end">10 Active</text>
+
+      <!-- Stat Box 2: After -->
+      <g transform="translate(0, 125)">
+        <rect width="360" height="100" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+        <text x="20" y="35" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Optimized Monthly Spend</text>
+        <text x="20" y="75" font-family="system-ui, sans-serif" font-size="32" fill="#10b981" font-weight="bold">$99.50</text>
+        <text x="310" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#10b981" text-anchor="end">Saved $1,300/yr</text>
+      </g>
+    </g>
+
+    <!-- Right Column: Simulated Rows -->
+    <g transform="translate(450, 90)">
+      <rect width="400" height="225" rx="10" fill="#0f172a" opacity="0.6" />
+      
+      <!-- Row 1 -->
+      <g transform="translate(20, 25)">
+        <circle cx="12" cy="12" r="6" fill="#10b981" />
+        <text x="35" y="17" font-family="system-ui, sans-serif" font-size="14" fill="#e2e8f0">Streaming Service A</text>
+        <text x="360" y="17" font-family="system-ui, sans-serif" font-size="14" fill="#e2e8f0" text-anchor="end">$15.49</text>
+      </g>
+      <line x1="20" y1="45" x2="380" y2="45" stroke="#334155" stroke-width="1" />
+
+      <!-- Row 2 -->
+      <g transform="translate(20, 65)">
+        <circle cx="12" cy="12" r="6" fill="#ef4444" />
+        <text x="35" y="17" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" text-decoration="line-through">Meal Kit Delivery</text>
+        <text x="360" y="17" font-family="system-ui, sans-serif" font-size="14" fill="#ef4444" text-anchor="end">Canceled</text>
+      </g>
+      <line x1="20" y1="85" x2="380" y2="85" stroke="#334155" stroke-width="1" />
+
+      <!-- Row 3 -->
+      <g transform="translate(20, 105)">
+        <circle cx="12" cy="12" r="6" fill="#3b82f6" />
+        <text x="35" y="17" font-family="system-ui, sans-serif" font-size="14" fill="#e2e8f0">Music Family Plan</text>
+        <text x="360" y="17" font-family="system-ui, sans-serif" font-size="14" fill="#e2e8f0" text-anchor="end">Shared</text>
+      </g>
+      <line x1="20" y1="125" x2="380" y2="125" stroke="#334155" stroke-width="1" />
+
+      <!-- Row 4 -->
+      <g transform="translate(20, 145)">
+        <circle cx="12" cy="12" r="6" fill="#ef4444" />
+        <text x="35" y="17" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8" text-decoration="line-through">Unused Dating App</text>
+        <text x="360" y="17" font-family="system-ui, sans-serif" font-size="14" fill="#ef4444" text-anchor="end">Canceled</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Title Overlay / Brand Accent Bar at Bottom -->
+  <rect x="150" y="500" width="900" height="4" fill="url(#accent)" rx="2" />
+</svg>
