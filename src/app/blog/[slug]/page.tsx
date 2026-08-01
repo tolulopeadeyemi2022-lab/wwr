@@ -10,6 +10,7 @@ import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { mdxComponents } from "@/components/MDXComponents";
 import NewsletterForm from "@/components/NewsletterForm";
 import PostCard from "@/components/PostCard";
+import AdBanner from "@/components/AdBanner";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -139,6 +140,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <div className="prose prose-ink max-w-none prose-headings:font-serif">
           <MDXRemote source={post.content} components={mdxComponents} />
         </div>
+
+      <AdBanner />
 
         <div className="mt-12">
           <NewsletterForm variant="compact" />
