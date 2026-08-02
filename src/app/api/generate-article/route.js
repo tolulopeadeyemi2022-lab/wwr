@@ -6,9 +6,8 @@ export async function POST(req) {
     .map((k) => process.env[k]);
 
   // Try these models in order. If one is delisted/rate-limited, we fall through to the next.
-  const models = [
+const models = [
   "nvidia/nemotron-3-ultra-550b-a55b:free",
-  "poolside/laguna-m.1:free",
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
 ];
 
@@ -22,7 +21,7 @@ Follow this EXACT frontmatter structure (fill in real values, keep the field nam
 title: "${title}"
 slug: "a-short-url-slug-based-on-the-title"
 metaDescription: "A compelling 1-2 sentence meta description including the keyword: ${keyword}"
-featuredImage: "/images/posts/a-short-url-slug-based-on-the-title.jpg"
+featuredImage: "/images/posts/a-short-url-slug-based-on-the-title.svg"
 featuredImageAlt: "Descriptive alt text for the featured image"
 category: category: "choose exactly one of these five slugs, copied exactly as written, no other options allowed: money-management, investing, make-more-money, debt-credit, financial-independence"
 tags: ["tag1", "tag2", "tag3", "tag4", "tag5"]

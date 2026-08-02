@@ -18,6 +18,7 @@ export default function AdminPage() {
   const [pinDetails, setPinDetails] = useState(null);
   const [pinDetailsLoading, setPinDetailsLoading] = useState(false);
   const [step, setStep] = useState(1);
+const [category, setCategory] = useState("");
 
   async function handleFileUpload(e) {
     const file = e.target.files[0];
@@ -41,6 +42,8 @@ export default function AdminPage() {
         setArticle(data.article);
         const match = data.article.match(/slug:\s*"([^"]+)"/);
         if (match) setSlug(match[1]);
+const catMatch = data.article.match(/category:\s*"([^"]+)"/);
+        if (catMatch) setCategory(catMatch[1]);
         setStep(2);
       } else {
         alert("Error: " + data.error);
@@ -57,7 +60,7 @@ export default function AdminPage() {
       const res = await fetch("/api/generate-image", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ title, keyword, slug }),
+        body: JSON.stringify({ title, category, slug }),
       });
       const data = await res.json();
       setImageLoading(false);
